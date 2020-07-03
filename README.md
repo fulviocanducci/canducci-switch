@@ -1,6 +1,6 @@
 # canducci-switch
 
-> Canducci Switch Checkbox
+## Canducci Switch Checkbox
 
 [![NPM](https://img.shields.io/npm/v/canducci-switch.svg)](https://www.npmjs.com/package/canducci-switch) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,12 +15,11 @@ npm install --save canducci-switch
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'canducci-switch'
-import 'canducci-switch/dist/index.css'
+import CanducciSwitch from 'canducci-switch'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <CanducciSwitch />
   }
 }
 ```
