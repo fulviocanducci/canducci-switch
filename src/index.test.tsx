@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import CanducciSwitch from '.'
 
-describe('ExampleComponent', () => {
+describe('CanducciSwitch', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(CanducciSwitch).toBeTruthy()
   })
 })

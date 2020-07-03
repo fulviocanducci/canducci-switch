@@ -28,3 +28,4 @@ class Example extends Component {
 ## License
 
 MIT © [fulviocanducci](https://github.com/fulviocanducci)
+"# canducci-switch" 

@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'canducci-switch'
-import 'canducci-switch/dist/index.css'
+import CanducciSwitch from 'canducci-switch'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <CanducciSwitch />
 }
 
 export default App
