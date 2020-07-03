@@ -8,7 +8,7 @@ const CanducciInputCheckbox = styled.input.attrs({
 })`
   cursor: pointer;
   width: 100px;
-  height: 50px;
+  height: 10px;
   position: relative;
   appearance: none;
   -moz-appearance: none;
@@ -28,11 +28,11 @@ const CanducciInputCheckbox = styled.input.attrs({
   &::before {
     font-family: 'fontAwesome';
     font-size: 22pt;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
     content: '\f00c';
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     color: #c9c9c9;
     transform: scale(1.1);
     position: absolute;
@@ -47,7 +47,7 @@ const CanducciInputCheckbox = styled.input.attrs({
   }
 
   :checked::before {
-    left: 50px;
+    left: 100px;
     color: #3998db;
   }
 `
