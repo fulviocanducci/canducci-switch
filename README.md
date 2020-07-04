@@ -46,7 +46,7 @@ class Example extends Component {
 
 ### Ouput
 
-
+![output](https://raw.githubusercontent.com/fulviocanducci/canducci-switch/master/img/output.png)
 
 ## License
 
