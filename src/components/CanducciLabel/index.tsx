@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Size from '../../enums/size'
-import IPropsLabel from '../../interfaces/IPropsLabel'
+import ICheckboxProps from '../../interfaces/ICheckboxProps'
 
-const CanducciLabel = styled.label<IPropsLabel>`
+const CanducciLabel = styled.label<ICheckboxProps>`
     position: relative;
     display: inline-block;
   
@@ -21,7 +21,7 @@ const CanducciLabel = styled.label<IPropsLabel>`
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #ccc;
+      background-color: ${(props) => props.backgroundColorOff};
       -webkit-transition: 0.4s;
       transition: 0.4s;
       ${(props) =>
@@ -45,18 +45,18 @@ const CanducciLabel = styled.label<IPropsLabel>`
         props.size === Size.Small &&
         `height:13px;width:13px;left:2px;bottom:2px;`}
       
-      background-color: white;
+      background-color: ${(props) => props.cicleColor};
       -webkit-transition: 0.4s;
       transition: 0.4s;
       ${(props) => props.round && `border-radius: 50%;`}
     }
   
     input:checked + span {
-      background-color: ${(props) => props.defaultColor};
+      background-color: ${(props) => props.backgroundColorOn};
     }
   
     input:focus + span {
-      box-shadow: 0 0 1px ${(props) => props.defaultColor};
+      box-shadow: 0 0 1px ${(props) => props.backgroundColorOn};
     }
   
     input:checked + span:before {

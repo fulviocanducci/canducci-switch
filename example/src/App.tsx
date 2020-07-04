@@ -16,7 +16,7 @@ const App = () => {
           defaultChecked={value0}
           onChange={() => setValue0(!value0)}
           size={Size.Big}
-          defaultColor={'red'}
+          backgroundColorOn={'red'}
         />
       </div>
       <div style={{ marginTop: 10 }}>
@@ -24,7 +24,9 @@ const App = () => {
           defaultChecked={value1}
           onChange={() => setValue1(!value1)}
           size={Size.Medium}
-          defaultColor={'#c00a56'}
+          backgroundColorOn={'#c00a56'}
+          backgroundColorOff={'#333'}
+          cicleColor={'white'}
         />
       </div>
       <div style={{ marginTop: 10 }}>
@@ -41,7 +43,9 @@ const App = () => {
           onChange={() => setValue3(!value3)}
           round
           size={Size.Big}
-          defaultColor={'green'}
+          backgroundColorOn={'#0E6251'}
+          backgroundColorOff={'#76D7C4'}
+          cicleColor={'#FFF'}
         />
       </div>
       <div style={{ marginTop: 10 }}>

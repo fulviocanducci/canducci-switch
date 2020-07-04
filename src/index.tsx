@@ -3,16 +3,24 @@ import CanducciLabel from './components/CanducciLabel'
 import CanducciCheckbox from './components/CanducciCheckbox'
 import CanducciSpan from './components/CanducciSpan'
 import Size from './enums/size'
-import IPropsCheckbox from './interfaces/IPropsCheckbox'
+import ICheckboxProps from './interfaces/ICheckboxProps'
 
-const CanducciSwitch: React.FC<IPropsCheckbox> = ({
+const CanducciSwitch: React.FC<ICheckboxProps> = ({
   round,
   size,
-  defaultColor,
+  backgroundColorOn,
+  backgroundColorOff,
+  cicleColor,
   ...shared
 }) => {
   return (
-    <CanducciLabel round={!!round} size={size} defaultColor={defaultColor}>
+    <CanducciLabel
+      round={!!round}
+      size={size}
+      backgroundColorOn={backgroundColorOn}
+      backgroundColorOff={backgroundColorOff}
+      cicleColor={cicleColor}
+    >
       <CanducciCheckbox {...shared} />
       <CanducciSpan />
     </CanducciLabel>
@@ -22,7 +30,9 @@ const CanducciSwitch: React.FC<IPropsCheckbox> = ({
 CanducciSwitch.defaultProps = {
   round: false,
   size: Size.Medium,
-  defaultColor: '#2196f3'
+  backgroundColorOn: '#2196f3',
+  backgroundColorOff: '#ccc',
+  cicleColor: '#ffffff'
 }
 
 export { Size }

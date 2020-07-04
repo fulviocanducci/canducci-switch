@@ -1,8 +1,8 @@
 import React from 'react'
 
-import IPropsCheckbox from '../../interfaces/IPropsCheckbox'
+import ICheckboxProps from '../../interfaces/ICheckboxProps'
 
-const CanducciCheckbox: React.FC<IPropsCheckbox> = (props) => (
+const CanducciCheckbox: React.FC<ICheckboxProps> = (props) => (
   <input type='checkbox' {...props} />
 )
 
