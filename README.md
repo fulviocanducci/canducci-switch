@@ -16,14 +16,37 @@ npm install --save canducci-switch
 ```tsx
 import React, { Component } from 'react'
 
-import CanducciSwitch from 'canducci-switch'
+import CanducciSwitch, { Size } from 'canducci-switch'
 
 class Example extends Component {
+  const [value, setValue] = useState<boolean>(true)
   render() {
-    return <CanducciSwitch />
+    return (
+      <div>
+        <div>
+          <CanducciSwitch
+            defaultChecked={value}
+            onChange={() => setValue(!value)}
+            size={Size.Medium}
+          />
+        </div>
+        <div>
+          <CanducciSwitch
+            defaultChecked={value}
+            onChange={() => setValue(!value)}
+            size={Size.Medium}
+            round
+          />
+        </div>
+      </div>
+    )
   }
 }
 ```
+
+### Ouput
+
+
 
 ## License
 

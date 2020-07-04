@@ -66,6 +66,23 @@ const App = () => {
           )}
         </pre>
       </div>
+      <div>
+        <div>
+          <CanducciSwitch
+            defaultChecked={value0}
+            onChange={() => setValue0(!value0)}
+            size={Size.Medium}
+          />
+        </div>
+        <div>
+          <CanducciSwitch
+            defaultChecked={value0}
+            onChange={() => setValue0(!value0)}
+            size={Size.Medium}
+            round
+          />
+        </div>
+      </div>
     </div>
   )
 }
