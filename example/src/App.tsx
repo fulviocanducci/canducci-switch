@@ -1,11 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import CanducciSwitch from 'canducci-switch'
+import CanducciSwitch, { Size } from 'canducci-switch'
 
 const App = () => {
+  const [value0, setValue0] = useState<boolean>(true)
+  const [value1, setValue1] = useState<boolean>(true)
+  const [value2, setValue2] = useState<boolean>(true)
+  const [value3, setValue3] = useState<boolean>(true)
+  const [value4, setValue4] = useState<boolean>(true)
+  const [value5, setValue5] = useState<boolean>(true)
   return (
-    <div style={{ marginTop: 50 }}>
-      <CanducciSwitch />
+    <div style={{ marginTop: 50, marginLeft: 0, textAlign: 'center' }}>
+      <div>
+        <CanducciSwitch
+          defaultChecked={value0}
+          onChange={() => setValue0(!value0)}
+          size={Size.Big}
+        />
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <CanducciSwitch
+          defaultChecked={value1}
+          onChange={() => setValue1(!value1)}
+          size={Size.Medium}
+        />
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <CanducciSwitch
+          defaultChecked={value2}
+          onChange={() => setValue2(!value2)}
+          size={Size.Small}
+        />
+      </div>
+      <hr />
+      <div>
+        <CanducciSwitch
+          defaultChecked={value3}
+          onChange={() => setValue3(!value3)}
+          round
+          size={Size.Big}
+        />
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <CanducciSwitch
+          defaultChecked={value4}
+          onChange={() => setValue4(!value4)}
+          size={Size.Medium}
+          round
+        />
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <CanducciSwitch
+          defaultChecked={value5}
+          onChange={() => setValue5(!value5)}
+          size={Size.Small}
+          round
+        />
+      </div>
+      <div>
+        <pre>
+          {JSON.stringify(
+            { value0, value1, value2, value3, value4, value5 },
+            null,
+            2
+          )}
+        </pre>
+      </div>
     </div>
   )
 }
