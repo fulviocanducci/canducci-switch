@@ -8,10 +8,11 @@ import IPropsCheckbox from './interfaces/IPropsCheckbox'
 const CanducciSwitch: React.FC<IPropsCheckbox> = ({
   round,
   size,
+  defaultColor,
   ...shared
 }) => {
   return (
-    <CanducciLabel round={!!round} size={size}>
+    <CanducciLabel round={!!round} size={size} defaultColor={defaultColor}>
       <CanducciCheckbox {...shared} />
       <CanducciSpan />
     </CanducciLabel>
@@ -20,7 +21,8 @@ const CanducciSwitch: React.FC<IPropsCheckbox> = ({
 
 CanducciSwitch.defaultProps = {
   round: false,
-  size: Size.Medium
+  size: Size.Medium,
+  defaultColor: '#2196f3'
 }
 
 export { Size }

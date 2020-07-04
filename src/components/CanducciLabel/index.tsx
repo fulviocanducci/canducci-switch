@@ -52,11 +52,11 @@ const CanducciLabel = styled.label<IPropsLabel>`
     }
   
     input:checked + span {
-      background-color: #2196f3;
+      background-color: ${(props) => props.defaultColor};
     }
   
     input:focus + span {
-      box-shadow: 0 0 1px #2196f3;
+      box-shadow: 0 0 1px ${(props) => props.defaultColor};
     }
   
     input:checked + span:before {

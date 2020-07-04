@@ -16,6 +16,7 @@ const App = () => {
           defaultChecked={value0}
           onChange={() => setValue0(!value0)}
           size={Size.Big}
+          defaultColor={'red'}
         />
       </div>
       <div style={{ marginTop: 10 }}>
@@ -23,6 +24,7 @@ const App = () => {
           defaultChecked={value1}
           onChange={() => setValue1(!value1)}
           size={Size.Medium}
+          defaultColor={'#c00a56'}
         />
       </div>
       <div style={{ marginTop: 10 }}>
@@ -39,6 +41,7 @@ const App = () => {
           onChange={() => setValue3(!value3)}
           round
           size={Size.Big}
+          defaultColor={'green'}
         />
       </div>
       <div style={{ marginTop: 10 }}>
