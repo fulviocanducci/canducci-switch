@@ -48,7 +48,15 @@ class Example extends Component {
 
 ![output](https://raw.githubusercontent.com/fulviocanducci/canducci-switch/master/img/output.png)
 
+
+### API
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| round | bool | false |
+| size | enum | medium |
+
+
 ## License
 
 MIT © [fulviocanducci](https://github.com/fulviocanducci)
-"# canducci-switch" 
