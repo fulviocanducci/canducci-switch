@@ -56,3 +56,8 @@ class Example extends Component {
 | backgroundColorOn | string | '#2196f3' |
 | backgroundColorOff | string | '#cccccc' |
 | cicleColor | string | '#ffffff' |
+
+
+## Demo
+
+[Examples Canducci Switch](https://fulviocanducci.github.io/canducci-switch/)
